@@ -6,9 +6,8 @@ class Solution {
                 secondmax = firstmax;
                 firstmax = n;
             }
-            else if(secondmax<n && n<=firstmax) secondmax = n;
+            else if(secondmax<n) secondmax = n;
         }
-        System.out.print(firstmax+" "+secondmax);
         return (secondmax-1)*(firstmax-1);
     }
 }
